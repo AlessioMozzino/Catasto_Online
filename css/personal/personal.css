@@ -1,0 +1,787 @@
+/* Inizio header */
+#header-top-container {
+  margin-top: 5px;
+}
+
+.header-hr-top {
+  margin: 5px auto;
+}
+
+#header-h1-logo {
+  font-family: 'Playfair Display', serif;
+}
+
+.header-h1-link-home {
+  color: black;
+  text-decoration: none;
+}
+
+.header-h1-link-home:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#header-div-menu-orizzontale ul ul {
+  display: none;
+}
+
+#header-div-menu-orizzontale ul li:hover > ul {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+#header-ul-menu-orizzontale {
+  display: block;
+  list-style: none;
+  padding: 0px;
+  margin: 15px auto;
+}
+
+#header-menu-dropdown {
+  display: none;
+  border-top: 0px solid #616A6B;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1px solid lightgrey;
+  border-radius: 0px;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+#header-menu-dropdown:focus {
+  border-color: #616A6B;
+}
+
+#header-div-menu {
+  margin-top: 20px;
+}
+
+/* Media query per mostrare/nascondere menù select */
+@media (max-width: 992px) {
+  #header-ul-menu-orizzontale {
+    display: none;
+  }
+  #header-menu-dropdown {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  #main-div-home-page {
+    text-align: center;
+  }
+  #second-main-div-home-page {
+    text-align: center;
+  }
+  #third-main-div-home-page {
+    text-align: center;
+  }
+  #header-div-logo {
+    text-align: center;
+  }
+  #header-div-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 765px) {
+  #main-recensioni-clienti {
+    margin-top: 50px;
+  }
+  .main-img-caratteristiche-servizio {
+    width: 20%;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-img-caratteristiche-servizio {
+    width: 10%;
+  }
+}
+
+.header-ul-menu-tendina-primo-livello {
+  margin: 10px auto;
+}
+
+.header-ul-menu-tendina-primo-livello div {
+  display: none;
+	list-style: none;
+}
+
+.header-li-menu-tendina-primo-livello {
+  float: right;
+  list-style: none;
+  width: auto;
+  color: #17202A;
+  text-decoration: none;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.header-li-menu-tendina-primo-livello:hover {
+  text-decoration: none;
+}
+
+.header-ul-menu-tendina-primo-livello li.header-li-menu-tendina-primo-livello:hover div {
+  display: block;
+  position: absolute;
+  background-color: white;
+  z-index: 100;
+  text-align: justify;
+  margin: 5px auto auto 0px;
+  padding: 5px 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  box-shadow: 1px 1px #616A6B;
+}
+
+.header-ul-menu-tendina-secondo-livello {
+  list-style: none;
+  padding: 0px;
+  color: #616A6B;
+}
+
+.header-li-menu-tendina-secondo-livello {
+  margin: 10px auto;
+}
+
+.header-menu-link-page-secondo-livello {
+  color: #616A6B;
+  padding: 10px 15px;
+}
+
+.header-menu-link-page-secondo-livello:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #616A6B;
+}
+
+.header-menu-link-page-primo-livello {
+  color: #17202A;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.header-menu-link-page-primo-livello:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #616A6B;
+}
+
+/* Fine header */
+/* Inizio main */
+#main-div-home-page, #second-main-div-home-page, #third-main-div-home-page {
+  margin-bottom: 50px;
+}
+
+.main-h1-home-page {
+  font-family: 'Archivo Black', sans-serif;
+  z-index: -1;
+}
+
+#section-card-planimetria, #section-card-visura-ordinaria, #section-card-visura-storica, #section-card-estratto-mappa {
+  padding: 5px 5px;
+}
+
+.card {
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+  padding: 10px 10px;
+  box-shadow: 1px 1px #616A6B;
+}
+
+.main-card-left-img-servizio {
+  position: relative;
+  width: 40%;
+  float: left;
+  text-align: left;
+  height: 60px;
+}
+
+.main-card-right-prezzo-servizio {
+  width: 60%;
+  float: right;
+  position: relative;
+  height: 60px;
+  text-align: right;
+}
+
+.main-card-div-decimal-price {
+  width: 60%;
+  float: right;
+  text-align: left;
+  padding: 0px 0px;
+}
+
+.main-card-h4-decimal-price {
+  margin: 0px 0px;
+  font-family: 'Lora', serif;
+}
+
+.card-body-title-servizio {
+  text-align: center;
+}
+
+.card-body-h4-title-servizio {
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.card-body-description-servizio {
+  text-align: justify;
+  height: 150px;
+}
+
+.card-body-p-descrizione-servizio {
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.card-body-button-acq-inf-servizio {
+  height: 20px;
+  margin: 0px auto 10px auto;
+}
+
+.card-body-button-acquista-servizio {
+  width: 35%;
+  text-align: left;
+  float: left;
+}
+
+.card-body-link-acquista-servizio {
+  padding: 10px 20px;
+  background-color: #616A6B;
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.card-body-link-acquista-servizio:hover {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #616A6B;
+}
+
+.card-body-button-informazioni-servizio {
+  width: 65%;
+  text-align: right;
+  float: right;
+}
+
+.card-body-link-informazioni-servizio {
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.card-body-link-informazioni-servizio:hover {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+}
+
+.description-price-service {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px 0px;
+}
+
+#second-main-div-home-page {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#second-main-div-servizio-rapido, #second-main-div-servizio-economico, #second-main-div-servizio-presente {
+  padding: 20px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+.second-main-div-tit-desc-caratteristiche-servizio {
+  width: 100%;
+  float: left;
+}
+
+.second-main-div-titolo-caratteristiche-servizio {
+  width: 100%;
+  text-align: center;
+}
+
+.second-main-h4-titolo-caratteristiche-servizio {
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.second-main-div-img-caratteristiche-servizio {
+  width: 100%;
+  text-align: center;
+  padding: 0px 0px;
+  height: auto;
+}
+
+.main-img-caratteristiche-servizio {
+  width: 40%;
+  filter: grayscale(100%);
+  margin: 10px 0px;
+}
+
+.second-main-div-descrizione-caratteristiche-servizio {
+  width: 100%;
+  height: auto;
+  text-align: justify;
+}
+
+.second-main-p-descrizione-caratteristiche-servizio {
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+#main-descrizione-recensioni-clienti {
+  text-align: justify;
+}
+
+.main-p-descrizione-recensioni-clienti {
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.main-p-recensioni-clienti-giudizio {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-style: italic;
+  color: black;
+}
+
+.main-p-recensioni-clienti-cliente {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-weight: bold;
+  color: black;
+  font-style: italic;
+}
+
+.main-link-review-evaluate-clienti {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-link-review-evaluate-clienti:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* DA NON MODIFICARE - RECENSIONI CLIENTI */
+.content-slider {
+  width: 100%;
+  height: auto;
+  text-align: justify;
+}
+
+.slider {
+  height: auto;
+  width: 100%;
+  margin: 0px auto 0;
+  overflow: visible;
+  position: relative;
+}
+
+.mask {
+  overflow: hidden;
+  height: 240px;
+}
+
+.slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slider li {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: auto;
+  list-style: none;
+}
+
+.slider .source {
+  text-align: left;
+}
+
+.slider li.anim1 {
+  animation: cycle 30s linear infinite;
+}
+
+.slider li.anim2 {
+  animation: cycle2 30s linear infinite;
+}
+
+.slider li.anim3 {
+  animation: cycle3 30s linear infinite;
+}
+
+.slider li.anim4 {
+  animation: cycle4 30s linear infinite;
+}
+
+.slider li.anim5 {
+  animation: cycle5 30s linear infinite;
+}
+
+.slider:hover li {
+  animation-play-state: paused;
+}
+
+@keyframes cycle {
+  0% {
+    top: 0px;
+  }
+  4% {
+    top: 0px;
+  }
+  16% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  20% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  21% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  50% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  92% {
+    top: -325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  96% {
+    top: -325px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes cycle2 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  16% {
+    top: -325px;
+    opacity: 0;
+  }
+  20% {
+    top: 0px;
+    opacity: 1;
+  }
+  24% {
+    top: 0px;
+    opacity: 1;
+  }
+  36% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  40% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  41% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle3 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  36% {
+    top: -325px;
+    opacity: 0;
+  }
+  40% {
+    top: 0px;
+    opacity: 1;
+  }
+  44% {
+    top: 0px;
+    opacity: 1;
+  }
+  56% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  60% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  61% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle4 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  56% {
+    top: -325px;
+    opacity: 0;
+  }
+  60% {
+    top: 0px;
+    opacity: 1;
+  }
+  64% {
+    top: 0px;
+    opacity: 1;
+  }
+  76% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  80% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  81% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle5 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  76% {
+    top: -325px;
+    opacity: 0;
+  }
+  80% {
+    top: 0px;
+    opacity: 1;
+  }
+  84% {
+    top: 0px;
+    opacity: 1;
+  }
+  96% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  100% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+}
+/* DA NON MODIFICARE - RECENSIONI CLIENTI */
+/* Fine main home page*/
+/* Inizio main acquista planimetria catastale singola */
+.form-acquista-titolo-settore {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: black;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.form-acquista-label-input {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: black;
+}
+
+.form-check-label {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: black;
+}
+
+.form-control {
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.form-control:focus {
+  color: #616A6B;
+}
+
+#modulo-ordinazione-planimetria-catastale {
+	
+}
+
+@media (max-width: 576px) {
+	#modulo-ordinazione-planimetria-catastale {
+		border: none;
+	}
+	
+	#informazioni-planimetria-catastale {
+		margin-top: 50px;
+	}
+}
+
+.form-acquisto-small-text-campo-obbligatorio {
+  color: #616A6B;
+}
+
+.form-acquisto-h5-guarda-esempio-documento {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: black;
+}
+
+.form-acquisto-link-esempio-documento {
+  color: black;
+  text-decoration: none;
+}
+
+.form-acquisto-link-esempio-documento:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.form-acquisto-hr-separatore-categorie-dati {
+  margin: 20px auto;
+  padding: 0px 0px;
+}
+
+#form-acquisto-pulsante-ordina-servizio {
+  background-color: lightgrey;
+  border: 1px solid black;
+  color: black;
+  box-shadow: 1px 1px #616A6B;
+}
+
+#form-acquisto-pulsante-ordina-servizio:hover {
+  background-color: darkgrey;
+  border: 2px solid black;
+  color: black;
+  box-shadow: 0px 0px;
+}
+
+.link-domande-frequenti {
+	color: black;
+	text-decoration: none;
+}
+
+.link-domande-frequenti:hover {
+	color: black;
+	text-decoration: underline;
+}
+/* Fine main acquista planimetria catastale singola */
+/* Inizio footer */
+#footer-container {
+  background-color: #616A6B;
+}
+
+#footer-div-informazioni-fiscali {
+  text-align: justify;
+}
+
+.footer-mini-logo {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  padding: 0px 0px;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.footer-hr {
+  margin: 5px 0px;
+  padding: 0px 0px;
+}
+
+.footer-informazioni-fiscali {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: white;
+}
+
+#footer-div-link-utili-legale {
+  text-align: left;
+}
+
+.footer-ul-link-utili {
+  list-style: none;
+  padding: 0px 0px;
+  float: left;
+}
+
+.footer-ul-link-utili {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: black;
+}
+
+.footer-li-link-utili-title {
+  color: white;
+}
+
+.footer-li-link-utili {
+  margin: 5px 0px;
+}
+
+.link-footer {
+	color: black;
+	text-decoration: none;
+}
+
+.link-footer:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.footer-img-carte-pagamenti {
+  width: 50px;
+  height: auto;
+  filter: grayscale(100%);
+  margin-right: 5px;
+}
+
+#footer-div-copyright {
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.footer-copyright {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: white;
+}
+/* Fine footer */
